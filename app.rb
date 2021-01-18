@@ -1,9 +1,10 @@
 require 'sinatra'
+set :session_secret, 'super secret'
 
 get '/' do
-  "hello!"
+  "hello world!"
 end
 
-# get '/secret' do
-#   "You can totally do this!"
-# end
+get '/secret' do
+  "You can totally do this!"
+end
