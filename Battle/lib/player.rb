@@ -5,14 +5,10 @@ class Player
   def initialize(name, hp = 60)
     @name = name
     @hp = hp
-  end 
-
-  def attack(player)
-   player.reduce_hp
   end
 
   def reduce_hp
     @hp -= 10
-  end 
+  end
 
 end
