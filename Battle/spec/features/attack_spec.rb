@@ -3,6 +3,6 @@ feature 'one player attacks the other' do
     sign_in_and_play
     visit('/play')
     click_button "Attack"
-    expect(page).to have_content "Tom attacked Dan"
+    expect(page).to have_content "P1 attacked P2"
   end
 end
