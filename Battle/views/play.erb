@@ -1,13 +1,9 @@
 <h1>
-  <%= @name_1.name%> vs <%= @name_2.name%>
+  <%= @game.player_1.name %> vs <%= @game.player_2.name %>
 </h1>
 
 <h2>
-  <%= @name_1.name%>: <%= @name_1.hp%>HP
-</h2>
-
-<h2>
-  <%= @name_2.name%>: <%= @name_2.hp%>HP
+  <%= @game.player_2.name %>: <%= @game.player_2.hp%>HP
 </h2>
 
 <form action = "/attack">

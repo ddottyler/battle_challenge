@@ -3,6 +3,7 @@ feature 'reducing hitpoints' do
     sign_in_and_play
     visit('/play')
     click_button "Attack"
+    click_link "OK"
     expect(page).to have_content "P2: 50HP"
   end
 end
