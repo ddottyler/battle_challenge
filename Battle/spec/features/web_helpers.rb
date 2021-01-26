@@ -4,3 +4,8 @@ def sign_in_and_play
     fill_in :name_2, with: "P2"
     click_button "Create players"
 end
+
+def attack_and_confirm
+  click_button 'Attack'
+  click_button 'OK'
+end
